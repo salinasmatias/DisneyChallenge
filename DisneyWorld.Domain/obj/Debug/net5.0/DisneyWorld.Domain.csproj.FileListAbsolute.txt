@@ -1,0 +1,12 @@
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\bin\Debug\net5.0\DisneyWorld.Domain.deps.json
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\bin\Debug\net5.0\DisneyWorld.Domain.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\bin\Debug\net5.0\ref\DisneyWorld.Domain.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\bin\Debug\net5.0\DisneyWorld.Domain.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.csproj.AssemblyReference.cache
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.AssemblyInfoInputs.cache
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.AssemblyInfo.cs
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\ref\DisneyWorld.Domain.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Domain\obj\Debug\net5.0\DisneyWorld.Domain.pdb

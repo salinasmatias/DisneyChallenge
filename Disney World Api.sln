@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisneyWorld.AccessData", "DisneyWorld.AccessData\DisneyWorld.AccessData.csproj", "{E96DFF36-0E44-4763-81B8-A8D83FB98AD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisneyWorld.Domain", "DisneyWorld.Domain\DisneyWorld.Domain.csproj", "{34B439ED-F347-489A-A0B5-0D66EB4CB496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisneyWorld.Application", "DisneyWorld.Application\DisneyWorld.Application.csproj", "{0932DD10-0000-407A-A5C2-933EE73B9F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisneyWorld.Presentation", "DisneyWorld.Presentation\DisneyWorld.Presentation.csproj", "{3CD42A64-15A5-41C9-96B4-740EF12D43B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E96DFF36-0E44-4763-81B8-A8D83FB98AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96DFF36-0E44-4763-81B8-A8D83FB98AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96DFF36-0E44-4763-81B8-A8D83FB98AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96DFF36-0E44-4763-81B8-A8D83FB98AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B439ED-F347-489A-A0B5-0D66EB4CB496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B439ED-F347-489A-A0B5-0D66EB4CB496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B439ED-F347-489A-A0B5-0D66EB4CB496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B439ED-F347-489A-A0B5-0D66EB4CB496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0932DD10-0000-407A-A5C2-933EE73B9F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0932DD10-0000-407A-A5C2-933EE73B9F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0932DD10-0000-407A-A5C2-933EE73B9F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0932DD10-0000-407A-A5C2-933EE73B9F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD42A64-15A5-41C9-96B4-740EF12D43B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD42A64-15A5-41C9-96B4-740EF12D43B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD42A64-15A5-41C9-96B4-740EF12D43B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD42A64-15A5-41C9-96B4-740EF12D43B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FB4ED0E-B2E2-4245-99A7-74E40FFD7A5E}
+	EndGlobalSection
+EndGlobal

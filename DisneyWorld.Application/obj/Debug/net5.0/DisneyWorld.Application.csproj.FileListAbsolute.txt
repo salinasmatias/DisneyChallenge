@@ -1,0 +1,17 @@
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.Application.deps.json
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.Application.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\ref\DisneyWorld.Application.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.Application.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.csproj.AssemblyReference.cache
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.AssemblyInfoInputs.cache
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.AssemblyInfo.cs
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.csproj.CoreCompileInputs.cache
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\ref\DisneyWorld.Application.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.AccessData.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.Domain.dll
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.AccessData.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\bin\Debug\net5.0\DisneyWorld.Domain.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Application\obj\Debug\net5.0\DisneyWorld.Application.csproj.CopyComplete
