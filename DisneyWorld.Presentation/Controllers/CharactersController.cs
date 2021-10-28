@@ -5,8 +5,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DisneyWorld.Presentation.Controllers
 {
@@ -132,7 +130,7 @@ namespace DisneyWorld.Presentation.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult UpdatePelicula(int id, [FromBody] PersonajeDtoForCreationOrUpdate personaje)
+        public IActionResult UpdateCharacter(int id, [FromBody] PersonajeDtoForCreationOrUpdate personaje)
         {
             try
             {
@@ -167,9 +165,9 @@ namespace DisneyWorld.Presentation.Controllers
         {
             try
             {
-                var personaje = _service.GetCharacteWithDetails(id);
+                var character = _service.GetCharacteWithDetails(id);
 
-                return Ok(personaje);
+                return Ok(character);
             }
             catch (Exception)
             {

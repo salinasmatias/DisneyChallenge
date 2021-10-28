@@ -66,3 +66,4 @@ C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debu
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\DisneyWorld.Application.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\DisneyWorld.Application.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\obj\Debug\net5.0\DisneyWorld.Presentation.csproj.CopyComplete

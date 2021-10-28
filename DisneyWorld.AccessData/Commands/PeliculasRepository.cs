@@ -1,20 +1,21 @@
-﻿using DisneyWorld.Domain.Commands;
+﻿using AutoMapper;
+using DisneyWorld.Domain.Commands;
+using DisneyWorld.Domain.Dtos;
 using DisneyWorld.Domain.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DisneyWorld.AccessData.Commands
 {
     public class PeliculasRepository : IPeliculasRepository
     {
         private readonly DisneyWorldContext _context;
+        private readonly IMapper _mapper;
 
-        public PeliculasRepository(DisneyWorldContext context)
+        public PeliculasRepository(DisneyWorldContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public void Add(Pelicula pelicula)
         {
@@ -30,7 +31,7 @@ namespace DisneyWorld.AccessData.Commands
 
         public List<Pelicula> GetAllPeliculas()
         {
-            return _context.Peliculas.ToList();
+            return _context.Peliculas.OrderBy(Pelicula => Pelicula.FechaCreacion).ToList();
         }
 
         public List<Pelicula> GetPeliculasByCharacterId(int id)
@@ -64,5 +65,42 @@ namespace DisneyWorld.AccessData.Commands
             _context.Update(pelicula);
             _context.SaveChanges();
         }
+
+        public List<Pelicula> GetPeliculasByGenreId(int genre)
+        {
+            return _context.Peliculas.Where(Pelicula => Pelicula.GeneroId == genre).ToList();
+        }
+
+        public List<Pelicula> GetAllPeliculasSortedByDesc()
+        {
+            return GetAllPeliculas().OrderByDescending(Pelicula => Pelicula.FechaCreacion).ToList();
+        }
+
+
+
+        public PeliculaDtoForDetails GetMovieWithDetails(int id)
+        {
+            var pelicula = GetPeliculaById(id);
+            var peliculaConDetalles = _mapper.Map<PeliculaDtoForDetails>(pelicula);
+            var personajesMapeados = _mapper.Map<List<PersonajeDto>>(GetCharacterByMovieId(pelicula.PeliculaId));
+            peliculaConDetalles.personajes = personajesMapeados;
+
+            return peliculaConDetalles;
+        }
+
+        public List<Personaje> GetCharacterByMovieId(int movieId)
+        {
+            var personajePeliculas = _context.PersonajePeliculas.Where(PersonajePeliculas => PersonajePeliculas.PeliculaId == movieId);
+            List<Personaje> personajes = new List<Personaje>();
+
+            foreach (var pelicula in personajePeliculas)
+            {
+                var personaje = _context.Personajes.Find(pelicula.PersonajeId);
+                personajes.Add(personaje);
+            }
+
+            return personajes;
+        }
+
     }
 }

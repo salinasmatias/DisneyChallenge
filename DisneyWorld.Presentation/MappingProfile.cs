@@ -1,10 +1,6 @@
 ﻿using AutoMapper;
 using DisneyWorld.Domain.Dtos;
 using DisneyWorld.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DisneyWorld.Presentation
 {
@@ -14,8 +10,12 @@ namespace DisneyWorld.Presentation
         {
             CreateMap<Personaje, PersonajeDto>();
             CreateMap<PersonajeDtoForCreationOrUpdate, Personaje>();
-            CreateMap<Pelicula, PeliculaDto>();
+            CreateMap<Pelicula, PeliculaDto>()
+                                              .ForMember(PeliculaDto => PeliculaDto.FechaCreacion, opt => opt.MapFrom(src => src.FechaCreacion.ToString("yyyy-MM-dd")));
             CreateMap<Personaje, PersonajeDtoForDetails>();
+            CreateMap<PeliculaDtoForCreationOrUpdate, Pelicula>();
+            CreateMap<Pelicula, PeliculaDtoForDetails>()
+                                                        .ForMember(PeliculaDtoForDetails => PeliculaDtoForDetails.FechaCreacion, opt => opt.MapFrom(src => src.FechaCreacion.ToString("yyyy-MM-dd"))); ;
         }
     }
 }
