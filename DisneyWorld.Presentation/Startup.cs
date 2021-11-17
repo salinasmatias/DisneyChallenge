@@ -2,6 +2,7 @@ using DisneyWorld.AccessData;
 using DisneyWorld.AccessData.Commands;
 using DisneyWorld.Application.Services;
 using DisneyWorld.Domain.Commands;
+using DisneyWorld.Domain.Dtos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,8 @@ namespace DisneyWorld.Presentation
             services.AddAutoMapper(typeof(Startup));
             services.AddTransient<ICharacteresRepository, CharactersRepository>();
             services.AddTransient<IPersonajesService, PersonajesService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IPeliculasRepository, PeliculasRepository>();
             services.AddTransient<IPeliculasService, PeliculasService>();
         }
