@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DisneyWorld.Application.Services;
 using DisneyWorld.Domain.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ namespace DisneyWorld.Presentation.Controllers
 {
     [Route("movies")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class MoviesController : ControllerBase
     {
         private readonly IPeliculasService _service;

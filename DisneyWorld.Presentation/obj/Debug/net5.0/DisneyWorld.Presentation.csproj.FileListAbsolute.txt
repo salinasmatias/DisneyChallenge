@@ -20,7 +20,6 @@ C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debu
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -66,4 +65,5 @@ C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debu
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\DisneyWorld.Application.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\DisneyWorld.Application.pdb
+C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.Presentation\obj\Debug\net5.0\DisneyWorld.Presentation.csproj.CopyComplete
