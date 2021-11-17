@@ -15,4 +15,3 @@ C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.AccessData\obj\Debug\
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.AccessData\obj\Debug\net5.0\ref\DisneyWorld.AccessData.dll
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.AccessData\obj\Debug\net5.0\DisneyWorld.AccessData.pdb
 C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.AccessData\obj\Debug\net5.0\DisneyWorld.AccessData.genruntimeconfig.cache
-C:\Users\kerne\Desktop\Alkemy\Disney World Api\DisneyWorld.AccessData\obj\Debug\net5.0\DisneyWorld.AccessData.csproj.CopyComplete

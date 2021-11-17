@@ -82,8 +82,88 @@ namespace DisneyWorld.AccessData
                       .WithMany(personaje => personaje.PersonajePeliculas)
                       .HasForeignKey(pp => pp.PersonajeId);
             });
+
+            modelBuilder.Entity<Role>(entity =>
+            {
+                entity.HasKey(e => e.RoleId);
+
+                entity.Property(e => e.Description)
+                    .IsRequired()
+                    .HasMaxLength(255);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.UserId);
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Username)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.HasOne(d => d.Role)
+                    .WithMany(p => p.Usuarios)
+                    .HasForeignKey(d => d.RoleId)
+                    .OnDelete(DeleteBehavior.ClientSetNull);
+            });
+
+            modelBuilder.Entity<Role>().HasData(
+                new Role
+                {
+                    RoleId = 1,
+                    Name = "Admin",
+                    Description = "Admin Role"
+                },
+                new Role
+                {
+                    RoleId = 2,
+                    Name = "User",
+                    Description = "User Role"
+                }
+            );
+
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    UserId = 1,
+                    Username = "Alkymer",
+                    Email = "Alkymer@alkemy.com",
+                    Password = "1234",
+                    RoleId = 1
+                },
+                new User
+                {
+                    UserId = 2,
+                    Username = "Test",
+                    Email = "test@test.com",
+                    Password = "test",
+                    RoleId = 2
+                },
+                new User
+                {
+                    UserId = 3,
+                    Username = "Test2",
+                    Email = "test2@test.com",
+                    Password = "test",
+                    RoleId = 2
+                }
+            );
+
         }
 
+        public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<User> Users { get; set; }
         public DbSet<Genero> Generos { get; set; }
         public DbSet<Pelicula> Peliculas { get; set; }
         public DbSet<Personaje> Personajes { get; set; }

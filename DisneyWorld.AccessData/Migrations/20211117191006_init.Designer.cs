@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DisneyWorld.AccessData.Migrations
 {
     [DbContext(typeof(DisneyWorldContext))]
-    [Migration("20211014023456_init")]
+    [Migration("20211117191006_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -131,6 +131,100 @@ namespace DisneyWorld.AccessData.Migrations
                     b.ToTable("PersonajePeliculas");
                 });
 
+            modelBuilder.Entity("DisneyWorld.Domain.Entities.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            Description = "Admin Role",
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            RoleId = 2,
+                            Description = "User Role",
+                            Name = "User"
+                        });
+                });
+
+            modelBuilder.Entity("DisneyWorld.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("UserId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "Alkymer@alkemy.com",
+                            Password = "1234",
+                            RoleId = 1,
+                            Username = "Alkymer"
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            Email = "test@test.com",
+                            Password = "test",
+                            RoleId = 2,
+                            Username = "Test"
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            Email = "test2@test.com",
+                            Password = "test",
+                            RoleId = 2,
+                            Username = "Test2"
+                        });
+                });
+
             modelBuilder.Entity("DisneyWorld.Domain.Entities.Pelicula", b =>
                 {
                     b.HasOne("DisneyWorld.Domain.Entities.Genero", "Genero")
@@ -160,6 +254,16 @@ namespace DisneyWorld.AccessData.Migrations
                     b.Navigation("Personaje");
                 });
 
+            modelBuilder.Entity("DisneyWorld.Domain.Entities.User", b =>
+                {
+                    b.HasOne("DisneyWorld.Domain.Entities.Role", "Role")
+                        .WithMany("Usuarios")
+                        .HasForeignKey("RoleId")
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
             modelBuilder.Entity("DisneyWorld.Domain.Entities.Genero", b =>
                 {
                     b.Navigation("Peliculas");
@@ -173,6 +277,11 @@ namespace DisneyWorld.AccessData.Migrations
             modelBuilder.Entity("DisneyWorld.Domain.Entities.Personaje", b =>
                 {
                     b.Navigation("PersonajePeliculas");
+                });
+
+            modelBuilder.Entity("DisneyWorld.Domain.Entities.Role", b =>
+                {
+                    b.Navigation("Usuarios");
                 });
 #pragma warning restore 612, 618
         }
